@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <title>Redirecting ...</title>
+     <base href="/Hickolare/">
+ 
+      <script>
+  const lang = navigator.language || navigator.userLanguage;
+  const target = lang.startsWith('en') ? '/en/' : '/nl/';
+  location.replace(target);
+</script>
+    </head>
+    <body></body>
+</html>

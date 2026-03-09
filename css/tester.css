@@ -1,0 +1,63 @@
+/* --- Mega Dropdown --- */
+#mainNavbar .dropdown-menu.mega-dropdown {
+  width: 800px; /* adjust if needed */
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  background-color: #fff;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#mainNavbar .dropdown-menu.mega-dropdown .dropdown-item {
+  padding: 0.25rem 0;
+  color: #333;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+#mainNavbar .dropdown-menu.mega-dropdown .dropdown-item:hover {
+  color: #0b47a1;
+  background-color: transparent;
+}
+
+#mainNavbar .dropdown-menu.mega-dropdown h6 {
+  font-size: 1rem;
+  color: #0b47a1;
+  margin-bottom: 0.5rem;
+}
+
+#mainNavbar .dropdown-menu.mega-dropdown .row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#mainNavbar .dropdown-menu.mega-dropdown .col-md-3 {
+  border-right: 1px solid #eee;
+  padding-right: 1rem;
+}
+
+#mainNavbar .dropdown-menu.mega-dropdown .col-md-3:last-child {
+  border-right: none;
+}
+
+
+
+.hero-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fadeText 180s infinite; /* 3 items × 60s each */
+}
+
+.hero-item:nth-child(1) { animation-delay: 0s; }
+.hero-item:nth-child(2) { animation-delay: 60s; }
+.hero-item:nth-child(3) { animation-delay: 120s; }
+
+@keyframes fadeText {
+  0%, 3%   { opacity: 0; }
+  5%, 95%  { opacity: 1; }
+  97%, 100%{ opacity: 0; }
+}
